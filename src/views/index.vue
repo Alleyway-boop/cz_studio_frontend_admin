@@ -1,6 +1,6 @@
 <template>
   <div class="app-container home">
-    <el-row :gutter="20">
+    <!-- <el-row :gutter="20">
       <el-col :sm="24" :lg="24">
         <blockquote class="text-warning" style="font-size: 14px">
           领取阿里云通用云产品1888优惠券
@@ -36,20 +36,17 @@
 
         <hr />
       </el-col>
-    </el-row>
+    </el-row> -->
     <el-row :gutter="20">
       <el-col :sm="24" :lg="12" style="padding-left: 20px">
-        <h2>若依后台管理框架</h2>
+        <h2>滁职软件工作室后台管理系统</h2>
         <p>
-          一直想做一款后台管理系统，看了很多优秀的开源项目但是发现没有合适自己的。于是利用空闲休息时间开始自己写一套后台系统。如此有了若依管理系统，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。所有前端后台代码封装过后十分精简易上手，出错概率低。同时支持移动客户端访问。系统会陆续更新一些实用功能。
+          一款为滁州职业技术学院软件技术工作室打造的管理平台
         </p>
         <p>
           <b>当前版本:</b> <span>v{{ version }}</span>
         </p>
-        <p>
-          <el-tag type="danger">&yen;免费开源</el-tag>
-        </p>
-        <p>
+        <!-- <p>
           <el-button
             type="primary"
             icon="Cloudy"
@@ -63,16 +60,16 @@
             @click="goTarget('http://ruoyi.vip')"
             >访问主页</el-button
           >
-        </p>
-      </el-col>
+        </p> -->
+      <!-- </el-col>
 
-      <el-col :sm="24" :lg="12" style="padding-left: 50px">
-        <el-row>
+      <el-col :sm="24" :lg="12" style="padding-left: 50px"> -->
+        <!-- <el-row>
           <el-col :span="12">
             <h2>技术选型</h2>
           </el-col>
-        </el-row>
-        <el-row>
+        </el-row> -->
+        <!-- <el-row>
           <el-col :span="6">
             <h4>后端技术</h4>
             <ul>
@@ -97,35 +94,35 @@
               <li>...</li>
             </ul>
           </el-col>
-        </el-row>
+        </el-row> -->
       </el-col>
     </el-row>
     <el-divider />
     <el-row :gutter="20">
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
-        <el-card class="update-log">
+        <!-- <el-card class="update-log"> -->
           <template v-slot:header>
             <div class="clearfix">
               <span>联系信息</span>
             </div>
           </template>
-          <div class="body">
-            <p>
+          <!-- <div class="body"> -->
+            <!-- <p>
               <i class="el-icon-s-promotion"></i> 官网：<el-link
                 href="http://www.ruoyi.vip"
                 target="_blank"
                 >http://www.ruoyi.vip</el-link
               >
-            </p>
-            <p>
+            </p> -->
+            <!-- <p>
               <i class="el-icon-user-solid"></i> QQ群：<s> 满937441 </s> <s> 满887144332 </s>
               <s> 满180251782 </s> <s> 满104180207 </s> <s> 满186866453 </s> <s> 满201396349 </s>
               <s> 满101456076 </s> <s> 满101539465 </s> <s> 满264312783 </s> <s> 满167385320 </s> 
               <s> 满104748341 </s> <s> 满160110482 </s> <s> 满170801498 </s> <s> 满108482800 </s> 
               <s> 满101046199 </s> <s> 满136919097 </s> <s> 满143961921 </s> <s> 满174951577 </s> 
               <s> 满161281055 </s> <s> 满138988063 </s> <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=SUc-msaypcqB2UTFif4eqGlBHkKcvMNP&authKey=JdQBouY2PG%2BS%2BCzAfIgbCGNgxyahpfh24IW%2F03rPxGilhqVbisLma%2FFFnt79DHNh&noverify=0&group_code=151450850" target="_blank">151450850</a>
-            </p>
-            <p>
+            </p> -->
+            <!-- <p>
               <i class="el-icon-chat-dot-round"></i> 微信：<a
                 href="javascript:;"
                 >/ *若依</a
@@ -137,19 +134,19 @@
                 class="支付宝信息"
                 >/ *若依</a
               >
-            </p>
-          </div>
-        </el-card>
+            </p> -->
+          <!-- </div> -->
+        <!-- </el-card> -->
       </el-col>
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
-        <el-card class="update-log">
+        <!-- <el-card class="update-log"> -->
           <template v-slot:header>
-            <div class="clearfix">
+            <!-- <div class="clearfix">
               <span>更新日志</span>
-            </div>
+            </div> -->
           </template>
-          <el-collapse accordion>
-            <el-collapse-item title="v3.8.8 - 2024-06-30">
+          <!-- <el-collapse accordion> -->
+            <!-- <el-collapse-item title="v3.8.8 - 2024-06-30">
               <ol>
                 <li>菜单管理新增路由名称</li>
                 <li>新增数据脱敏过滤注解</li>
@@ -178,8 +175,8 @@
                 <li>优化导入Excel时设置dictType属性重复查缓存问题</li>
                 <li>其他细节优化</li>
               </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.8.7 - 2023-12-08">
+            </el-collapse-item> -->
+            <!-- <el-collapse-item title="v3.8.7 - 2023-12-08">
               <ol>
                 <li>操作日志记录部门名称</li>
                 <li>全局数据存储用户编号</li>
@@ -297,8 +294,8 @@
                 <li>修复某些特性的情况用户编辑对话框中角色和部门无法修改问题</li>
                 <li>其他细节优化</li>
               </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.8.4 - 2022-09-26">
+            </el-collapse-item> -->
+            <!-- <el-collapse-item title="v3.8.4 - 2022-09-26">
               <ol>
                 <li>数据逻辑删除不进行唯一验证</li>
                 <li>Excel注解支持导出对象的子列表方法</li>
@@ -333,8 +330,8 @@
                 <li>优化表格上右侧工具条（搜索按钮显隐&右侧样式凸出）</li>
                 <li>其他细节优化</li>
               </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v3.8.3 - 2022-06-27">
+            </el-collapse-item> -->
+            <!-- <el-collapse-item title="v3.8.3 - 2022-06-27">
               <ol>
                 <li>新增缓存列表菜单功能</li>
                 <li>代码生成树表新增(展开/折叠)</li>
@@ -986,40 +983,25 @@
                 <li>修复菜单类型为按钮时不显示权限标识</li>
                 <li>其他细节优化</li>
               </ol>
-            </el-collapse-item>
-            <el-collapse-item title="v1.0.0 - 2019-10-08">
+            </el-collapse-item> -->
+            <!-- <el-collapse-item title="v1.0.0 - 2019-10-08">
               <ol>
                 <li>若依前后端分离系统正式发布</li>
               </ol>
-            </el-collapse-item>
-          </el-collapse>
-        </el-card>
+            </el-collapse-item> -->
+          <!-- </el-collapse>
+        </el-card> -->
       </el-col>
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
-        <el-card class="update-log">
-          <template v-slot:header>
-            <div class="clearfix">
-              <span>捐赠支持</span>
-            </div>
-          </template>
-          <div class="body">
-            <img
-              src="@/assets/images/pay.png"
-              alt="donate"
-              style="width:100%"
-            />
-            <span style="display: inline-block; height: 30px; line-height: 30px"
-              >你可以请作者喝杯咖啡表示鼓励</span
-            >
-          </div>
-        </el-card>
+
+      
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script setup name="Index">
-const version = ref('3.8.8')
+const version = ref('1.0.0')
 
 function goTarget(url) {
   window.open(url, '__blank')
