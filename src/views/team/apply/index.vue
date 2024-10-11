@@ -39,7 +39,7 @@
       <el-form-item label="性别 true为男 false为女" prop="gender">
         <el-select v-model="queryParams.gender" placeholder="请选择性别 true为男 false为女" clearable size="small">
           <el-option
-            v-for="dict in dict.type.$(dictType)"
+            v-for="dict in dict"
             :key="dict.value"
             :label="dict.label"
             :value="dict.value"
@@ -176,13 +176,15 @@
       <el-table-column label="班级" align="center" prop="inClass" />
       <el-table-column label="生日" align="center" prop="birthday" width="180">
         <template slot-scope="scope">
-          <span>{{ parseTime(scope.row.birthday, '{y}-{m}-{d}') }}</span>
+          {{ scope }}
+          <!-- <span>{{ parseTime(scope.row.birthday, '{y}-{m}-{d}') }}</span> -->
         </template>
       </el-table-column>
       <el-table-column label="教育背景 0为中职  1为普高   2为其他" align="center" prop="education" />
       <el-table-column label="性别 true为男 false为女" align="center" prop="gender">
         <template slot-scope="scope">
-          <dict-tag :options="dict.type.$(column.dictType)" :value="scope.row.gender"/>
+          {{ scope }}
+          <!-- <dict-tag :options="dict" :value="scope.row.gender"/> -->
         </template>
       </el-table-column>
       <el-table-column label="家乡" align="center" prop="hometown" />
@@ -194,7 +196,8 @@
       <el-table-column label="留言" align="center" prop="remarks" />
       <el-table-column label="报名时间" align="center" prop="applyTime" width="180">
         <template slot-scope="scope">
-          <span>{{ parseTime(scope.row.applyTime, '{y}-{m}-{d}') }}</span>
+          {{ scope }}
+          <!-- <span>{{ parseTime(scope.row.applyTime, '{y}-{m}-{d}') }}</span> -->
         </template>
       </el-table-column>
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
@@ -248,7 +251,7 @@
         <el-form-item label="性别 true为男 false为女" prop="gender">
           <el-select v-model="form.gender" placeholder="请选择性别 true为男 false为女">
             <el-option
-              v-for="dict in dict.type.$(dictType)"
+              v-for="dict in dict"
               :key="dict.value"
               :label="dict.label"
 :value="dict.value"
@@ -449,6 +452,13 @@ export default {
         ...this.queryParams
       }, `apply_${new Date().getTime()}.xlsx`)
     }
+  },
+  computed:{
+  dict(){
+    const { proxy } = getCurrentInstance();
+    const { sys_normal_disable } = proxy.useDict("sys_user_sex");
+    return sys_normal_disable;
   }
+  },
 };
 </script>
